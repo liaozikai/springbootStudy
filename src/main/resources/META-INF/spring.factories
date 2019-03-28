@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.lzkspace.springboot.demo.initilalize.HelloApplicationContextInitializer
+
+org.springframework.boot.SpringApplicationRunListener=\
+com.lzkspace.springboot.demo.initilalize.HelloSpringApplicationRunListener
+        
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.example.startdemo.config.HelloServiceAutoConfiguration

@@ -1,0 +1,38 @@
+# idea要插入spring Assistant插件才有提示功能
+# 同时要引入spring-boot-configuration-processor插件
+# application.yml和application.properties都能够设置proson的属性，只是格式不同
+#person:
+#  name: 王尼玛
+#  age: 18
+#  boss: true
+#  birth: 2018/12/12
+#  maps: {key1: value1,key2: v2}
+#  lists: 
+#    - lisi
+#    - wangwu
+#    - zhaoliu
+#  dog:
+#    age: 18
+#    name: 小狗
+    
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8008
+spring:
+  profiles:dev
+  
+---
+server:
+  port: 8009
+spring:
+  profiles: prod
+  
+  
+---
+server:
+     port: 8010
+spring:
+  profiles: test
